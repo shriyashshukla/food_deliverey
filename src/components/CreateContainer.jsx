@@ -248,7 +248,6 @@ const CreateContainer = () => {
             <MdFoodBank className="text-gray-700 text-2xl" />
             <input
               type="text"
-              required
               value={calories}
               onChange={(e) => setCalories(e.target.value)}
               placeholder="Calories"
