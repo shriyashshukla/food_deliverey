@@ -37,13 +37,13 @@ export const heroData = [
 export const categories = [
   {
     id: 1,
-    name: "Chicken",
-    urlParamName: "chicken",
+    name: "Top-rated",
+    urlParamName: "fruits",
   },
   {
     id: 2,
-    name: "Curry",
-    urlParamName: "curry",
+    name: "Paneer",
+    urlParamName: "paneer",
   },
   {
     id: 3,
@@ -57,8 +57,8 @@ export const categories = [
   },
   {
     id: 5,
-    name: "Fruits",
-    urlParamName: "fruits",
+    name: "Naan",
+    urlParamName: "chicken",
   },
   {
     id: 6,
