@@ -1,11 +1,15 @@
 import React, { useState , useEffect} from 'react'
 import restaurantList from "../utils/dummydata";
+import StarRating from './StarRating';
+import { motion } from "framer-motion";
 
 
 
 
 
 const Restaurant = () => {
+
+  
    
   const [restaurantData, setrestaurantData] = useState(restaurantList);
 
@@ -15,22 +19,25 @@ const Restaurant = () => {
 
   const displayData = () => {
     return restaurantData.map((restaurant) => (
-      <div className="col-md-3 mb-4">
+      <motion.div className="col-md-3 mb-4"
+       >
         <div className="card">
           <img className="card-img-top" src={restaurant.image} alt="" />
           <div className="card-body">
             <h4>{restaurant.name}</h4>
             <h3>{restaurant.area}</h3>
-            <h2>*{restaurant.rating}</h2>
+             <StarRating rating={restaurant.rating} />
           </div>
         </div>
-      </div>
+      </motion.div>
     ));
   };
+  
+  
   const searchrestaurant = (e) => {
     const search = e.target.value;
     const result = restaurantList.filter((restaurant) => {
-      return restaurant.area.toLowerCase().includes(search.toLowerCase());
+      return restaurant.name.toLowerCase().includes(search.toLowerCase());
     });
     setrestaurantData(result);
   };
@@ -39,30 +46,30 @@ const Restaurant = () => {
     if (e.target.value === "") return  setrestaurantData(restaurantList);
     const selname = e.target.value;
     const result = restaurantList.filter((restaurant) => {
-      return restaurant.name === selname;
+      return restaurant.area === selname;
     });
     setrestaurantData(result);
   };
 
-  const selectOption = (name) => {
-    if(selOptions.includes(name)) {
-        setSelOptions(selOptions.filter((b) => b !== name));
+   const selectOption = (area) => {
+    if(selOptions.includes(area)) {
+         setSelOptions(selOptions.filter((b) => b !== area));
     }else{
-        setSelOptions([...selOptions, name]);
+       setSelOptions([...selOptions, area]);
     }
-  }
+   }
 
   useEffect(() => {
     if(selOptions.length === 0) return setrestaurantData(restaurantList);
     setrestaurantData(restaurantList.filter((restaurant) => {
-        return selOptions.includes(restaurant.name);
+        return selOptions.includes(restaurant.area);
     }))
   }, [ selOptions ]);
   
 
   return (
     <div>
-      <header className="bg-dark text-white">
+      <header className="bg-dark text-white py-5">
         <div className="container py-5">
           <h1 className="text-center">Restaurant List</h1>
           <hr />
@@ -93,7 +100,7 @@ const Restaurant = () => {
         <div className="row">{displayData()}</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Restaurant
+export default Restaurant;

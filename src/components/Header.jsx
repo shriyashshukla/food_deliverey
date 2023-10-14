@@ -79,10 +79,10 @@ const Header = () => {
             <NavLink className="nav-link" to="/menu"> Menu</NavLink>
             </li>
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              About Us
+            <NavLink className="nav-link" to="/special">Special</NavLink>
             </li>
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Service
+            <NavLink className="nav-link" to="/aboutus">About us</NavLink>
             </li>
           </motion.ul>
 
@@ -187,25 +187,25 @@ const Header = () => {
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  Home
+                  <NavLink className="nav-link" to="/restaurant"> Restaurant</NavLink>
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  Menu
+                 <NavLink className="nav-link" to="/menu"> Menu</NavLink>
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  About Us
+                  <NavLink className="nav-link" to="/special">Special</NavLink>
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  Service
+                 <NavLink className="nav-link" to="/aboutus">About us</NavLink>
                 </li>
               </ul>
 

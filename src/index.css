@@ -18,6 +18,21 @@ body {
   overflow-x: hidden;
 }
 
+.star-rating {
+  display: inline-block;
+}
+
+.star-filled {
+  color: gold; /* or any other color for filled stars */
+}
+
+.star-empty {
+  color: #ccc; /* or any other color for empty stars */
+}
+
+.star-half {
+  color: #ffc107; /* or any other color for half stars */
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

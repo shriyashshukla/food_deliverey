@@ -8,6 +8,8 @@ import { actionType } from "./context/reducer";
 import Restaurant from "./components/Restaurant";
 import NotFound from "./components/NotFound";
 import Menu from "./components/Menu";
+import Aboutus from "./components/Aboutus";
+import Special from "./components/Special";
 
 
 
@@ -40,6 +42,8 @@ const App = () => {
             <Route path="/restaurant " element={<Restaurant/>}/>
             <Route element={< Restaurant/>} path="/restaurant" />
             <Route element={< Menu/>} path="/menu" />
+            <Route element={< Aboutus/>} path="/aboutus" />
+            <Route element={< Special/>} path="/special" />
             <Route element={<NotFound />} path="*" />
           </Routes>
         </main>
