@@ -17,7 +17,14 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.navbar {
+  background-color: transparent; /* Set the initial background color to transparent */
+  transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+}
 
+.navbar.navbar-scrolled {
+  background-color: white; /* Change the background color to white when scrolled */
+}
 .star-rating {
   display: inline-block;
 }
@@ -32,6 +39,56 @@ body {
 
 .star-half {
   color: #ffc107; /* or any other color for half stars */
+}
+
+.restaurant-list {
+  width: 300px; /* Adjust the width as desired */
+  height: 100px; /* Set the height to 100px */
+  overflow-y: scroll; /* Add scrollbars if content exceeds the height */
+}
+
+/* Add these styles to your CSS */
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.card-overlay:hover .overlay-text {
+  opacity: 1;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card-overlay:hover .close-button {
+  display: block;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .overlay {
+    align-items: flex-start; /* Adjust alignment for mobile screens */
+  }
 }
 @tailwind base;
 @tailwind components;

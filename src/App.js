@@ -14,6 +14,8 @@ import Special from "./components/Special";
 
 
 const App = () => {
+  
+
   const [ { foodItems },dispatch] = useStateValue();
 
   const fetchData = async () => {
@@ -45,6 +47,7 @@ const App = () => {
             <Route element={< Aboutus/>} path="/aboutus" />
             <Route element={< Special/>} path="/special" />
             <Route element={<NotFound />} path="*" />
+
           </Routes>
         </main>
       </div>

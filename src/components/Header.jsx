@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
 import { motion } from "framer-motion";
 
@@ -13,12 +13,30 @@ import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 
 const Header = () => {
+
   const firebaseAuth = getAuth(app);
   const provider = new GoogleAuthProvider();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const [{ user, cartShow, cartItems }, dispatch] = useStateValue();
+  
 
   const [isMenu, setIsMenu] = useState(false);
+
+
+  const scrollHandler = () => {
+    if (window.scrollY > 100) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   const login = async () => {
     if (!user) {
@@ -54,8 +72,7 @@ const Header = () => {
 
   return (
     <nav>
-    <header className="fixed z-50 w-screen p-3 px-4 md:p-6 md:px-16 ">
-      {/* desktop & tablet */}
+<header className={`fixed z-50 w-screen p-3 px-4 md:p-6 md:px-16 navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>      {/* desktop & tablet */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <Link to={"/"} className="flex items-center gap-2">
           <img src={Logo} className="w-8 object-cover" alt="logo" />

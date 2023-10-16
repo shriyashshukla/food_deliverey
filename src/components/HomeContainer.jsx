@@ -2,8 +2,11 @@ import React from "react";
 import Delivery from "../img/delivery.png";
 import HeroBg from "../img/heroBg.jpg";
 import { heroData } from "../utils/data";
+import { motion } from "framer-motion";
 
 const HomeContainer = () => {
+  
+
   return (
     <section
       className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full "
@@ -51,7 +54,14 @@ const HomeContainer = () => {
           alt="hero-bg"
         />
 
-        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-4 flex-wrap">
+        <motion.div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-4 flex-wrap"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01]
+        }}>
           {heroData &&
             heroData.map((n) => (
               <div
@@ -76,7 +86,7 @@ const HomeContainer = () => {
                 </p>
               </div>
             ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
