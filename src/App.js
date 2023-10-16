@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound";
 import Menu from "./components/Menu";
 import Aboutus from "./components/Aboutus";
 import Special from "./components/Special";
+import Footer from "./components/Footer";
 
 
 
@@ -36,6 +37,7 @@ const App = () => {
     <AnimatePresence wait>
       <div className="w-screen h-auto flex flex-col ">
         <Header />
+        
 
         <main className="mt-14 md:mt-20 px-4 md:px-16 py-4 w-full">
           <Routes>
@@ -51,7 +53,9 @@ const App = () => {
           </Routes>
         </main>
       </div>
+      <Footer/>
     </AnimatePresence>
+    
   );
 };
 

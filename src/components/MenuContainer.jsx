@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import RowContainer from "./RowContainer";
 import { useStateValue } from "../context/StateProvider";
 
+
 const MenuContainer = () => {
   const [filter, setFilter] = useState("chicken");
 

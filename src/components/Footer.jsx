@@ -1,43 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle, faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-dark text-center text-white  ">
+      <footer className="bg-dark text-center text-white">
         <div className="container p-4 pb-0">
           <section className="mb-4">
             <Link
               className="btn text-white btn-floating m-1"
               style={{ backgroundColor: "#dd4b39" }}
-              to="mailto:bhanuelicit@gmail.com"
+              to="/harishukla797@gmail.com"
               role="button"
             >
-              <i className="fab fa-google" />
+              <FontAwesomeIcon icon={faGoogle} />
             </Link>
             <Link
               className="btn text-white btn-floating m-1"
               style={{ backgroundColor: "#ac2bac" }}
-              to="https://www.instagram.com/_bhanu_s/"
+              to="https://www.instagram.com/shriyash_shukla/"
               role="button"
             >
-              <i className="fab fa-instagram" />
+              <FontAwesomeIcon icon={faInstagram} />
             </Link>
             <Link
               className="btn text-white btn-floating m-1"
               style={{ backgroundColor: "#0082ca" }}
-              to="https://www.linkedin.com/in/bhanu-sharma-a4063b136/"
+              to="/in/shriyash-shukla-49a426220"
               role="button"
             >
-              <i className="fab fa-linkedin-in" />
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </Link>
             <Link
               className="btn text-white btn-floating m-1"
               style={{ backgroundColor: "#333333" }}
-              to="https://github.com/bhanu-sh"
+              to="https://github.com/shriayshshukla"
               role="button"
             >
-              <i className="fab fa-github" />
+              <FontAwesomeIcon icon={faGithub} />
             </Link>
           </section>
         </div>
@@ -47,9 +49,9 @@ const Footer = () => {
         >
           © 2023 Copyright:{" "}
           <Link className="text-white" to="/">
-            ReFurnished
+            Pappi paet
           </Link>
-          <span className="mx-2 px-2 border-secondary border-start">Made by: <Link className="text-white" to="https://github.com/bhanu-sh">Bhanu</Link></span>
+          <span className="mx-2 px-2 border-secondary border-start">Made by: <Link className="text-white" to="https://github.com/shriyashshukla">Shriyash shukla</Link></span>
         </div>
       </footer>
     </div>

@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+
 /* popins  font*/
 * {
   margin: 0;
@@ -48,48 +51,62 @@ body {
 }
 
 /* Add these styles to your CSS */
-.overlay-text {
-  position: absolute;
+/* Menu.css */
+
+.overlay {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  transition: opacity 0.3s;
-  opacity: 0;
+  z-index: 100;
 }
 
-.card-overlay:hover .overlay-text {
-  opacity: 1;
+.card-overlay {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  margin: 10px 0;
 }
 
 .close-button {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: transparent;
-  color: white;
-  border: none;
+  font-size: 20px;
   cursor: pointer;
+  color: #333;
 }
 
-.card-overlay:hover .close-button {
-  display: block;
+.buy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
 
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-  .overlay {
-    align-items: flex-start; /* Adjust alignment for mobile screens */
-  }
+.buy-button:hover {
+  background: #0056b3;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
