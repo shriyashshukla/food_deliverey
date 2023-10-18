@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 
 
-
 const Restaurant = () => {
 
   const [restaurantData, setrestaurantData] = useState(restaurantList);
@@ -84,11 +83,21 @@ const Restaurant = () => {
 
   return (
     <div>
-      <header className="bg-filter text-black py-0">
-        <div className="container py-5 " style={{ backgroundImage: `url('https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&w=600')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <h1 className="text-center">Restaurant List</h1>
-
-          <input type="text" className="form-control w-50 mx-auto" onChange={searchrestaurant} />
+      <header className="bg-relative bg-center bg-cover text-black py-0">
+        <div
+          className="container py-5 relative"
+          style={{
+            backgroundImage: `url('https://c8.alamy.com/comp/2C1A20G/banner-raw-uncooked-ingredients-for-cooking-pasta-cooking-background-food-banner-2C1A20G.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <h1 className="text-4xl text-center mb-4">Restaurant List</h1>
+          <input
+            type="text"
+            className="form-control w-50 mx-auto"
+            onChange={searchrestaurant}
+          />
 
           <div className="text-center mt-4">
 
@@ -114,6 +123,7 @@ const Restaurant = () => {
               <div className="form-check form-check-inline">
                 <input checked={selOptions.includes('Kapoorthala')} onClick={() => { selectOption('Kapoorthala') }} className="form-check-input" type="checkbox" id="kapoorthalaCheckbox" />
                 <label className="form-check-label" htmlFor="kapoorthalaCheckbox">Kapoorthala</label>
+                <div className="bg-blur"></div>
               </div>
             </div>
           </div>
@@ -125,7 +135,6 @@ const Restaurant = () => {
           {displayData()}
         </div>
       </div>
-
     </div>
   );
 }

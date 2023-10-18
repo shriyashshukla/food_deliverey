@@ -4,6 +4,8 @@ import HeroBg from "../img/heroBg.jpg";
 import { heroData } from "../utils/data";
 import { motion } from "framer-motion";
 
+
+
 const HomeContainer = () => {
   
 
@@ -87,6 +89,9 @@ const HomeContainer = () => {
               </div>
             ))}
         </motion.div>
+
+       
+       
       </div>
     </section>
   );

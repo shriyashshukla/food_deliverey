@@ -12,6 +12,10 @@ import { NavLink } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 
+import CartContainer from "./CartContainer";
+  
+
+
 const Header = () => {
 
   const firebaseAuth = getAuth(app);
@@ -55,7 +59,8 @@ const Header = () => {
 
   const logout = () => {
     setIsMenu(false);
-    localStorage.clear();
+    localStorage.removeItem("user");
+    
 
     dispatch({
       type: actionType.SET_USER,
@@ -237,6 +242,8 @@ const Header = () => {
         </div>
       </div>
     </header>
+    
+    {cartShow && <CartContainer />}
     </nav>
   );
 };

@@ -11,6 +11,7 @@ import Menu from "./components/Menu";
 import Aboutus from "./components/Aboutus";
 import Special from "./components/Special";
 import Footer from "./components/Footer";
+import Cart from "./components/Cart";
 
 
 
@@ -48,7 +49,8 @@ const App = () => {
             <Route element={< Menu/>} path="/menu" />
             <Route element={< Aboutus/>} path="/aboutus" />
             <Route element={< Special/>} path="/special" />
-            <Route element={<NotFound />} path="*" />
+            <Route element={< NotFound />} path="*" />
+            <Route element={< Cart />} path="/cart" />
 
           </Routes>
         </main>

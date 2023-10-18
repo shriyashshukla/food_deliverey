@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { RiRefreshFill } from "react-icons/ri";
 
+import { NavLink } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
@@ -14,11 +16,13 @@ const CartContainer = () => {
   const [tot, setTot] = useState(0);
 
   const showCart = () => {
+    console.log("Clicked on back button");
     dispatch({
       type: actionType.SET_CART_SHOW,
       cartShow: !cartShow,
     });
   };
+  
 
   useEffect(() => {
     let totalPrice = cartItems.reduce(function (accumulator, item) {
@@ -84,7 +88,7 @@ const CartContainer = () => {
               <p className="text-gray-400 text-lg">₹ {tot}</p>
             </div>
             <div className="w-full flex items-center justify-between">
-              <p className="text-gray-400 text-lg">Delivery</p>
+              <p className="text-gray-400 text-lg">Tax</p>
               <p className="text-gray-400 text-lg">₹</p>
             </div>
 
@@ -93,7 +97,7 @@ const CartContainer = () => {
             <div className="w-full flex items-center justify-between">
               <p className="text-gray-200 text-xl font-semibold">Total</p>
               <p className="text-gray-200 text-xl font-semibold">
-              ₹{tot + 2.5}
+              ₹{tot + 20.5}
               </p>
             </div>
 
@@ -103,7 +107,7 @@ const CartContainer = () => {
                 type="button"
                 className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
               >
-                Check Out
+                <NavLink className="nav-link" to="/buypage">Check Out</NavLink>
               </motion.button>
             ) : (
               <motion.button

@@ -7,6 +7,10 @@ import { useStateValue } from "../context/StateProvider";
 import MenuContainer from "./MenuContainer";
 import CartContainer from "./CartContainer";
 
+import Slider from "./Slider/Slider";
+import TopBrands from "./Slider/deliveryItem/topBrands";
+
+
 const MainContainer = () => {
   const [{ foodItems, cartShow }, dispatch] = useStateValue();
   const [scrollValue, setScrollValue] = useState(0);
@@ -15,7 +19,11 @@ const MainContainer = () => {
 
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center ">
+
       <HomeContainer />
+      <Slider/>
+      <TopBrands/>
+     
 
       <section className="w-full my-6">
         <div className="w-full flex items-center justify-between">
@@ -48,8 +56,9 @@ const MainContainer = () => {
       </section>
 
       <MenuContainer />
+      
 
-      {cartShow && <CartContainer />}
+      
     </div>
   );
 };
