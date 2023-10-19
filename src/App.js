@@ -12,6 +12,7 @@ import Aboutus from "./components/Aboutus";
 import Special from "./components/Special";
 import Footer from "./components/Footer";
 import Cart from "./components/Cart";
+import Buypage from "./components/buypage";
 
 
 
@@ -41,6 +42,7 @@ const App = () => {
         
 
         <main className="mt-14 md:mt-20 px-4 md:px-16 py-4 w-full">
+         
           <Routes>
             <Route path="/*" element={<MainContainer />} />
             <Route path="/createItem" element={<CreateContainer />} />
@@ -51,8 +53,9 @@ const App = () => {
             <Route element={< Special/>} path="/special" />
             <Route element={< NotFound />} path="*" />
             <Route element={< Cart />} path="/cart" />
-
+            <Route element={<Buypage />} path="/buypage" />
           </Routes>
+          
         </main>
       </div>
       <Footer/>
