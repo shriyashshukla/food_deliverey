@@ -6,7 +6,7 @@
 </P>
 
 
-<H3>Some Images</H3>
+Some Images
 ![Screenshot 2023-10-19 174209](https://github.com/shriyashshukla/food_deliverey/assets/139564061/6ddee090-bc1f-45db-884f-2c6326b785c3)
 ![Screenshot 2023-10-19 174143](https://github.com/shriyashshukla/food_deliverey/assets/139564061/7632b6bc-a96f-4ada-a74e-063538c9c098)
 ![Screenshot 2023-10-19 174127](https://github.com/shriyashshukla/food_deliverey/assets/139564061/a36c3735-e30b-4192-91d7-bbee10e11181)
@@ -82,12 +82,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-
 <h3> Contact</h3>
 harishukla797@gmail.com
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
