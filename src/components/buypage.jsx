@@ -59,7 +59,7 @@ const FoodOrderPage = () => {
           </div>
           <div className="flex justify-between items-center mb-4">
             <span>Total (INR)</span>
-            <span className="font-semibold text-blue-500">₹20</span>
+            <span className="font-semibold text-blue-500">₹90</span>
           </div>
           <form className="flex" onSubmit={handleSubmit}>
         <input
