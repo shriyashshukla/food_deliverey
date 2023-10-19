@@ -1,8 +1,12 @@
-Some Images
+<H1>Restaurant booking  Food Ordering  with  Mern Stack </H1>
+
+<H3>Description </H3>
+<P>
+  Welcome to our food ordering website, your one-stop destination for culinary delights delivered right to your doorstep. At our online platform, we've curated a diverse menu of mouthwatering dishes from local restaurants, each dish a symphony of flavors and textures waiting to tantalize your taste buds. Whether you're craving savory classics, exotic international cuisines, or delectable desserts, we've got you covered. With our user-friendly interface and intuitive features, ordering your favorite meal has never been easier. Simply browse our extensive menu, customize your order to your heart's content, and then relax as we ensure your food is prepared to perfection and promptly delivered. Elevate your dining experience with us and savor the convenience, variety, and quality that our food ordering website provides. Bon appétit!
+</P>
 
 
-
-
+<H3>Some Images</H3>
 ![Screenshot 2023-10-19 174209](https://github.com/shriyashshukla/food_deliverey/assets/139564061/6ddee090-bc1f-45db-884f-2c6326b785c3)
 ![Screenshot 2023-10-19 174143](https://github.com/shriyashshukla/food_deliverey/assets/139564061/7632b6bc-a96f-4ada-a74e-063538c9c098)
 ![Screenshot 2023-10-19 174127](https://github.com/shriyashshukla/food_deliverey/assets/139564061/a36c3735-e30b-4192-91d7-bbee10e11181)
@@ -77,6 +81,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
+
+
+<h3> Contact</h3>
+harishukla797@gmail.com
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
