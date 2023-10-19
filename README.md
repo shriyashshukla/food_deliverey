@@ -1,3 +1,23 @@
+<H1>Restaurant booking  Food Ordering  with  Mern Stack </H1>
+
+<H3>Description </H3>
+<P>
+  Welcome to our food ordering website, your one-stop destination for culinary delights delivered right to your doorstep. At our online platform, we've curated a diverse menu of mouthwatering dishes from local restaurants, each dish a symphony of flavors and textures waiting to tantalize your taste buds. Whether you're craving savory classics, exotic international cuisines, or delectable desserts, we've got you covered. With our user-friendly interface and intuitive features, ordering your favorite meal has never been easier. Simply browse our extensive menu, customize your order to your heart's content, and then relax as we ensure your food is prepared to perfection and promptly delivered. Elevate your dining experience with us and savor the convenience, variety, and quality that our food ordering website provides. Bon appétit!
+</P>
+
+
+Some Images
+![1](https://github.com/shriyashshukla/food_deliverey/assets/139564061/d6bea4f3-c5c4-479f-adc8-404be7a2bbdd)
+![2](https://github.com/shriyashshukla/food_deliverey/assets/139564061/c7229aac-5634-4fb9-ad42-8cc9839f1844)
+![3](https://github.com/shriyashshukla/food_deliverey/assets/139564061/56d95376-df60-4177-8135-67a25fa1f1c2)
+![4](https://github.com/shriyashshukla/food_deliverey/assets/139564061/71f86b41-bcb6-430b-93f9-9db733915015)
+![5](https://github.com/shriyashshukla/food_deliverey/assets/139564061/ce35e5bf-e891-43be-97b6-989648e9d5af)
+![6](https://github.com/shriyashshukla/food_deliverey/assets/139564061/6e756a6c-d669-4a3b-85b1-270747d993af)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -63,8 +83,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3> Contact</h3>
+harishukla797@gmail.com
