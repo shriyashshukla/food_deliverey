@@ -7,13 +7,13 @@
 
 
 Some Images
-![Screenshot 2023-10-19 174209](https://github.com/shriyashshukla/food_deliverey/assets/139564061/6ddee090-bc1f-45db-884f-2c6326b785c3)
-![Screenshot 2023-10-19 174143](https://github.com/shriyashshukla/food_deliverey/assets/139564061/7632b6bc-a96f-4ada-a74e-063538c9c098)
-![Screenshot 2023-10-19 174127](https://github.com/shriyashshukla/food_deliverey/assets/139564061/a36c3735-e30b-4192-91d7-bbee10e11181)
-![Screenshot 2023-10-19 174054](https://github.com/shriyashshukla/food_deliverey/assets/139564061/b817c9f0-bebe-44ed-a833-ee6e34c68139)
-![Screenshot 2023-10-19 174036](https://github.com/shriyashshukla/food_deliverey/assets/139564061/6ce2e02f-cacc-41bf-9817-1c52dd8ccf6d)
-![Screenshot 2023-10-19 174016](https://github.com/shriyashshukla/food_deliverey/assets/139564061/f60babd8-bba2-48a2-8f0a-3976b8abcb54)
-![Screenshot 2023-10-19 173952](https://github.com/shriyashshukla/food_deliverey/assets/139564061/a65959b0-d286-46f1-98f0-1aec4fb42086)
+
+![6](https://github.com/shriyashshukla/food_deliverey/assets/139564061/6e756a6c-d669-4a3b-85b1-270747d993af)
+![5](https://github.com/shriyashshukla/food_deliverey/assets/139564061/ce35e5bf-e891-43be-97b6-989648e9d5af)
+![4](https://github.com/shriyashshukla/food_deliverey/assets/139564061/71f86b41-bcb6-430b-93f9-9db733915015)
+![3](https://github.com/shriyashshukla/food_deliverey/assets/139564061/56d95376-df60-4177-8135-67a25fa1f1c2)
+![2](https://github.com/shriyashshukla/food_deliverey/assets/139564061/c7229aac-5634-4fb9-ad42-8cc9839f1844)
+![1](https://github.com/shriyashshukla/food_deliverey/assets/139564061/d6bea4f3-c5c4-479f-adc8-404be7a2bbdd)
 
 
 
